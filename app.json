@@ -1,0 +1,21 @@
+{
+  "name": "MMS Ticket Distribution",
+  "description": "MMS Ticket Distribution using PHP, Laravel and Twilio",
+  "logo": "https://static1.twilio.com/packages/company/img/logos_icon_round.png",
+  "repository": "https://github.com/rickyrobinett/MMS-Ticket-Distribution",
+  "keywords": ["twilio", "PHP", "laravel", "MMS"],
+  "env": {
+    "TWILIO_ACCOUNT_SID": {
+      "description": "Your Twilio account id",
+      "required": true
+    },
+    "TWILIO_AUTH_TOKEN": {
+      "description": "Your Twilio authentication token",
+      "required": true
+    },
+    "TWILIO_PHONE_NUMBER": {
+      "description": "Your Twilio phone number",
+      "required": true
+    }
+  }
+}
