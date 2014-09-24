@@ -38,7 +38,7 @@ Route::match(array('GET', 'POST'), '/', function()
             $_SERVER['TWILIO_PHONE_NUMBER'],
             Input::get('phone_num'),
             "Congrats! Here's your golden ticket.",
-            "http://". $_SERVER['HTTP_HOST'] . "?name=" .urlencode(Input::get('name')) . "&phone_num=" . Input::get('phone_num')
+            "http://". $_SERVER['HTTP_HOST'] . "/qrcode?name=" .urlencode(Input::get('name')) . "&phone_num=" . Input::get('phone_num')
         );
       Session::flash('alert', 'Golden Ticket Sent!');
     }
